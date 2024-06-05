@@ -6,9 +6,11 @@
     <title>Учебный сайт</title>
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <img alt="" src="{{ url_for('static', filename='preview.jpg') }}">
+    
 </head>
 <body>
     <h1>Добро пожаловать!</h1>
+    <a href="{{ url_for('table_page') }}">Таблица умножения</a>
     <form>
         <label>Введите арифметическое выражение (например 2+3):</label>
         <input type="text" name="expression">
